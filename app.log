@@ -1,0 +1,354 @@
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:07:45] "POST / HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a helpful assistant that translates user input to French.'}, {'role': 'user', 'content': 'hello sir'}], 'model': 'gpt-3.5-turbo', 'frequency_penalty': 0.0, 'max_tokens': 150, 'presence_penalty': 0.0, 'temperature': 0.7, 'top_p': 1.0}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x103ba2180>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x101b8e250> server_hostname='api.openai.com' timeout=5.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10366eed0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 23 Mar 2024 11:07:54 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-tvza341qytvrq92ifoufxrsl'), (b'openai-processing-ms', b'474'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'160000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'159829'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'64ms'), (b'x-request-id', b'req_568491936f0d2e8616162b2aed9e13f9'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'868df5dd1ec59715-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:07:54] "POST / HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a helpful assistant that translates user input to French.'}, {'role': 'user', 'content': 'hey'}], 'model': 'gpt-3.5-turbo', 'frequency_penalty': 0.0, 'max_tokens': 150, 'presence_penalty': 0.0, 'temperature': 0.7, 'top_p': 1.0}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x103ba2a80>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x101b8e250> server_hostname='api.openai.com' timeout=5.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x103ba27e0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 23 Mar 2024 11:08:26 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-tvza341qytvrq92ifoufxrsl'), (b'openai-processing-ms', b'286'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'160000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'159831'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'63ms'), (b'x-request-id', b'req_69c4d463ffd1296ea6e57dfe8a1fe0a8'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'868df6a4090966fc-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:08:26] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:09:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/pieterbecking/Python Projects/app.py', reloading
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:11:33] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:11:37] "GET / HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a helpful assistant that translates user input to French.'}, {'role': 'user', 'content': 'hi mama, hoe is het met jou?'}], 'model': 'gpt-3.5-turbo', 'frequency_penalty': 0.0, 'max_tokens': 150, 'presence_penalty': 0.0, 'temperature': 0.7, 'top_p': 1.0}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x106588200>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x104156250> server_hostname='api.openai.com' timeout=5.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x106587dd0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 23 Mar 2024 11:12:44 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-tvza341qytvrq92ifoufxrsl'), (b'openai-processing-ms', b'303'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'160000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'159824'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'66ms'), (b'x-request-id', b'req_da073a6259c81e18604a3da636273317'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'868dfcf36ad0970e-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:12:44] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:12:50] "GET / HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a helpful assistant that translates user input to French.'}, {'role': 'user', 'content': 'hoe laat is het?'}], 'model': 'gpt-3.5-turbo', 'frequency_penalty': 0.0, 'max_tokens': 150, 'presence_penalty': 0.0, 'temperature': 0.7, 'top_p': 1.0}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x106589190>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x104156250> server_hostname='api.openai.com' timeout=5.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x106543e00>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 23 Mar 2024 11:12:59 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-tvza341qytvrq92ifoufxrsl'), (b'openai-processing-ms', b'668'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'160000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'159827'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'64ms'), (b'x-request-id', b'req_133a98e9e65a6b151ce259a31732a7fb'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'868dfd4e7db366c2-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:12:59] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:13:06] "GET / HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a helpful assistant that translates user input to French.'}, {'role': 'user', 'content': ' icuesghfisuh'}], 'model': 'gpt-3.5-turbo', 'frequency_penalty': 0.0, 'max_tokens': 150, 'presence_penalty': 0.0, 'temperature': 0.7, 'top_p': 1.0}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10658b5c0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x104156250> server_hostname='api.openai.com' timeout=5.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10658b170>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 23 Mar 2024 11:18:32 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-tvza341qytvrq92ifoufxrsl'), (b'openai-processing-ms', b'759'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'160000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'159828'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'64ms'), (b'x-request-id', b'req_66ce2f5c9d6e54c2fa49a44c4e5d5cad'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'868e056c992266a4-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:18:32] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/pieterbecking/Python Projects/app.py', reloading
+DEBUG:root:User Input: hi my name is pieter, AI Response: Salut, je m'appelle Pieter.
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:27:54] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:27:54] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:27:54] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:27:54] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:27:54] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/pieterbecking/Python Projects/app.py', reloading
+DEBUG:root:User Input: hi my name is pieter, AI Response: Bonjour, je m'appelle Pieter.
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:32:34] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:32:34] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:32:34] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:32:34] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:32:34] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/pieterbecking/Python Projects/app.py', reloading
+DEBUG:root:User Input: hi my name is pieter, AI Response: Bonjour, je m'appelle Pieter.
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:32:57] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:32:58] "GET /static/translation_result.pdf HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/pieterbecking/Python Projects/app.py', reloading
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:36:38] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:36:38] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:36:38] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:36:38] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:36:38] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/pieterbecking/Python Projects/app.py', reloading
+DEBUG:root:User Input: ('Loes Becking', 'Heemstede'), AI Response: Loes Becking was a kind-hearted woman who lived in the picturesque town of Heemstede, nestled in the Netherlands. She was known throughout the community for her warm smile, gentle demeanor, and willingness to lend a helping hand to anyone in need.
+
+Loes lived in a charming little cottage on the outskirts of town, surrounded by colorful tulip fields and lush green meadows. She had a deep love for nature and spent her days tending to her garden, which bloomed with an array of vibrant flowers that seemed to dance in the gentle breeze.
+
+Despite her peaceful surroundings, Loes had a restless spirit and a thirst for adventure. She often spent her weekends exploring the nearby forests and hiking along the winding paths that led to hidden water
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:36:58] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:36:58] "GET /static/translation_result.pdf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:37:02] "GET / HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'Hey chatgpt, can you write a story about Loes Becking, who lives in Heemstede?'}], 'model': 'gpt-3.5-turbo', 'frequency_penalty': 0.0, 'max_tokens': 150, 'presence_penalty': 0.0, 'temperature': 0.7, 'top_p': 1.0}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x108656a80>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x108133ad0> server_hostname='api.openai.com' timeout=5.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1086563f0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 23 Mar 2024 11:39:19 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-tvza341qytvrq92ifoufxrsl'), (b'openai-processing-ms', b'3618'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'160000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'159829'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'64ms'), (b'x-request-id', b'req_7b9c22f54d24fa315a468b30bfb114a0'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'868e23cc0b780a64-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+DEBUG:root:User Input: ('Loes Becking', 'Heemstede'), AI Response: Once upon a time in the charming town of Heemstede, there lived a young woman named Loes Becking. Loes was known throughout the town for her kind heart and adventurous spirit. She had long, flowing hair the color of sun-ripened wheat and eyes that sparkled like the stars in the night sky.
+
+Loes lived in a quaint cottage on the outskirts of Heemstede, surrounded by lush green fields and colorful blooming flowers. She spent her days tending to her garden, where she grew an abundance of fruits and vegetables that she shared with her neighbors. Loes had a deep love for nature and took great joy in the simple pleasures of life.
+
+But despite her peaceful surroundings, Loes longed
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:39:19] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:39:19] "GET /static/translation_result.pdf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:40:06] "GET / HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'Hey chatgpt, can you write a story about Loes Becking, who lives in Heemstede?'}], 'model': 'gpt-3.5-turbo', 'frequency_penalty': 0.0, 'max_tokens': 150, 'presence_penalty': 0.0, 'temperature': 0.7, 'top_p': 1.0}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10865d580>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x108133ad0> server_hostname='api.openai.com' timeout=5.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10865d160>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 23 Mar 2024 11:40:33 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-tvza341qytvrq92ifoufxrsl'), (b'openai-processing-ms', b'3566'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'160000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'159829'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'64ms'), (b'x-request-id', b'req_a97169c5bfff239078cd367b41040b48'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'868e259ca90e6654-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+DEBUG:root:User Input: ('Loes Becking', 'Heemstede'), AI Response: Once upon a time in the picturesque town of Heemstede, there lived a young woman named Loes Becking. Loes was known throughout the town for her kind heart and adventurous spirit. She had a love for the outdoors and spent much of her time exploring the lush forests and rolling hills that surrounded her home.
+
+Loes had a deep connection to nature and found solace in the quiet beauty of the world around her. She would often wander through the woods, listening to the gentle rustling of the leaves and the melodic songs of the birds. It was in these moments that Loes felt truly at peace, her worries melting away in the embrace of the natural world.
+
+One day, as Loes was out on one of her
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:40:33] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:40:33] "GET /static/translation_result.pdf HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/pieterbecking/Python Projects/app.py', reloading
+DEBUG:root:User Input: ('Loes Becking', 'Heemstede'), AI Response: Once upon a time in the quaint town of Heemstede, there lived a young woman named Loes Becking. Loes was known throughout the town for her kind heart and adventurous spirit. She had a love for nature and often spent her days exploring the beautiful forests and meadows that surrounded her home.
+
+Loes lived in a charming cottage on the outskirts of Heemstede, nestled amongst tall trees and blooming flowers. Her days were filled with tending to her garden, taking long walks in the countryside, and caring for the many animals that called her property home.
+
+One day, while out on one of her nature walks, Loes stumbled upon a hidden path that led deep into the heart of the forest. Curious and
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:44:25] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:44:25] "GET /static/translation_result.pdf HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/pieterbecking/Python Projects/app.py', reloading
+DEBUG:root:User Input: ('Pieter Becking', 'Heemstede'), AI Response: Once upon a time, in the picturesque town of Heemstede in the Netherlands, there lived a man named Pieter Becking. Pieter was a well-respected member of the community, known for his kind heart and gentle nature. He lived in a charming house on the edge of town, surrounded by lush greenery and colorful flowers.
+
+Pieter was an avid gardener and spent much of his time tending to his beautiful garden. His flowers were the envy of the neighborhood, with vibrant tulips, daffodils, and roses blooming in perfect harmony. People from far and wide would come to admire his garden and seek his advice on growing their own flowers.
+
+But Pieter's kindness extended beyond his garden. He was
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:44:51] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:44:51] "GET /static/translation_result.pdf HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/pieterbecking/Python Projects/app.py', reloading
+DEBUG:root:User Input: ('Pieter', 'Amsterdam'), AI Response: Once upon a time in the picturesque city of Amsterdam, there lived a young man named Pieter. Pieter was a talented artist who found inspiration in the vibrant streets, historic canals, and unique architecture of his beloved city.
+
+Pieter lived in a cozy apartment overlooking one of Amsterdam's famous canals. He spent his days wandering through the bustling markets, sketching the beautiful tulip fields, and capturing the essence of Amsterdam in his paintings.
+
+One sunny morning, as Pieter strolled along the cobblestone streets, he came across a charming little art gallery showcasing local talent. Intrigued, he decided to step inside and admire the works of his fellow artists.
+
+To his surprise, the gallery owner approached him and struck up a conversation
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:45:43] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:45:43] "GET /static/translation_result.pdf HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'Hey chatgpt, can you write a story about Pieter, who lives in Amsterdam?'}], 'model': 'gpt-3.5-turbo', 'frequency_penalty': 0.0, 'max_tokens': 150, 'presence_penalty': 0.0, 'temperature': 0.7, 'top_p': 1.0}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x103e9a420>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x103973ad0> server_hostname='api.openai.com' timeout=5.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x103db82f0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 23 Mar 2024 11:46:15 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-tvza341qytvrq92ifoufxrsl'), (b'openai-processing-ms', b'2527'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'160000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'159831'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'63ms'), (b'x-request-id', b'req_df7f78d23a2711421d20201aca843a38'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'868e2dfaaa4eb939-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+DEBUG:root:User Input: ('Pieter', 'Amsterdam'), AI Response: Once upon a time in the beautiful city of Amsterdam, there lived a young man named Pieter. Pieter was a proud resident of this lively and vibrant city, known for its picturesque canals, historic architecture, and colorful tulip fields.
+
+Pieter was a skilled artist, who found inspiration in the bustling streets and charming cafes of Amsterdam. He spent his days wandering through the city, sketching the elegant bridges, the crooked houses, and the graceful boats that floated lazily along the canals.
+
+One sunny morning, as Pieter strolled along the cobbled streets of Amsterdam, he came across a quaint little art gallery tucked away in a quiet corner. Intrigued, he decided to step inside and explore the exquisite paintings and sculptures
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:46:15] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:46:15] "GET /static/translation_result.pdf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:47:06] "GET / HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'Hey chatgpt, can you write a story about Piet, who lives in Ams?'}], 'model': 'gpt-3.5-turbo', 'frequency_penalty': 0.0, 'max_tokens': 150, 'presence_penalty': 0.0, 'temperature': 0.7, 'top_p': 1.0}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x103ea5160>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x103973ad0> server_hostname='api.openai.com' timeout=5.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x103ea4c80>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'Hey chatgpt, can you write a story about Piet, who lives in Ams?'}], 'model': 'gpt-3.5-turbo', 'frequency_penalty': 0.0, 'max_tokens': 150, 'presence_penalty': 0.0, 'temperature': 0.7, 'top_p': 1.0}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x103ea6ff0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x103973ad0> server_hostname='api.openai.com' timeout=5.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x103ea6ba0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 23 Mar 2024 11:47:12 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-tvza341qytvrq92ifoufxrsl'), (b'openai-processing-ms', b'2225'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'160000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'159833'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'62ms'), (b'x-request-id', b'req_4972cbb74e0d431a770bdc493f45797a'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'868e2f63ee8696f1-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+DEBUG:root:User Input: ('Piet', 'Ams'), AI Response: Once upon a time in the bustling city of Amsterdam, there lived a young man named Piet. Piet was a hardworking and ambitious individual who had big dreams and aspirations. He lived in a small apartment in the heart of the city, where the streets were always alive with the sounds of people chatting, bikes ringing, and trams passing by.
+
+Piet worked as a barista in a cozy cafe by day, where he served up delicious coffee and pastries to the locals and tourists alike. But his true passion lay in photography. In his free time, Piet would wander the streets of Amsterdam with his camera in hand, capturing the beauty of the city in every frame.
+
+One day, while strolling through the famous Vondelpark, Piet
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:47:12] "POST / HTTP/1.1" 200 -
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 23 Mar 2024 11:47:15 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-tvza341qytvrq92ifoufxrsl'), (b'openai-processing-ms', b'4566'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'160000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'159833'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'62ms'), (b'x-request-id', b'req_c44153648cd9b96fc47925aa02cd0a47'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'868e2f6afa3666e0-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+DEBUG:root:User Input: ('Piet', 'Ams'), AI Response: Once upon a time, in the bustling city of Amsterdam, there lived a young man named Piet. Piet was a bright and ambitious individual who had always dreamed of making a name for himself in the vibrant city he called home. From a young age, he was fascinated by the rich history, culture, and diversity that surrounded him in Ams.
+
+Piet grew up in a modest neighborhood, where he lived with his loving family. His parents had always encouraged him to pursue his dreams and never settle for anything less than what he truly desired. With their unwavering support, Piet set out to conquer the world and leave his mark on the city of Amsterdam.
+
+As he grew older, Piet discovered his passion for art and design. He spent hours exploring
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:47:16] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:47:16] "GET /static/translation_result.pdf HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'Hey chatgpt, can you write a story about Piet, who lives in Ams?'}], 'model': 'gpt-3.5-turbo', 'frequency_penalty': 0.0, 'max_tokens': 150, 'presence_penalty': 0.0, 'temperature': 0.7, 'top_p': 1.0}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x103e9a450>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x103973ad0> server_hostname='api.openai.com' timeout=5.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x103e99f40>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 23 Mar 2024 11:47:44 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-tvza341qytvrq92ifoufxrsl'), (b'openai-processing-ms', b'3293'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'160000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'159833'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'62ms'), (b'x-request-id', b'req_08b04a776ca654834a2e31f4cffba478'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'868e3024eeb2b96c-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+DEBUG:root:User Input: ('Piet', 'Ams'), AI Response: Once upon a time, in the vibrant city of Amsterdam, there lived a man named Piet. Piet was a hardworking and kind-hearted individual who had spent his entire life in Ams, as the locals affectionately called their city.
+
+Piet was known throughout the city for his friendly nature and willingness to help others in need. He worked as a boat tour guide, taking tourists on leisurely rides through the picturesque canals of Amsterdam, sharing the rich history and culture of the city with them.
+
+Despite his busy schedule, Piet always made time to explore the city he loved. He would often be found wandering the cobblestone streets, admiring the historic architecture and vibrant street art that adorned the buildings.
+
+One day, as Piet was guiding a
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:47:44] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:47:44] "GET /static/translation_result.pdf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:47:48] "GET / HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'Hey chatgpt, can you write a story about Pieter, who lives in Becking?'}], 'model': 'gpt-3.5-turbo', 'frequency_penalty': 0.0, 'max_tokens': 150, 'presence_penalty': 0.0, 'temperature': 0.7, 'top_p': 1.0}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x103eb9a00>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x103973ad0> server_hostname='api.openai.com' timeout=5.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x103eb9610>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 23 Mar 2024 11:47:56 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-tvza341qytvrq92ifoufxrsl'), (b'openai-processing-ms', b'3343'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'160000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'159831'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'63ms'), (b'x-request-id', b'req_95c0d544d1298c11866d7bf69ab759e2'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'868e30708e8d1c78-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+DEBUG:root:User Input: ('Pieter', 'Becking'), AI Response: Once upon a time in the small town of Becking, there lived a young man named Pieter. Pieter was a hardworking and kind-hearted individual who was loved by everyone in the town. He had a passion for helping others and always went out of his way to lend a helping hand to those in need.
+
+Pieter worked as a carpenter in the town, crafting beautiful pieces of furniture and intricate woodwork that were cherished by the townspeople. His work was known far and wide for its exquisite craftsmanship and attention to detail.
+
+Despite his busy schedule, Pieter always made time to volunteer at the local orphanage, where he would spend his evenings teaching the children how to build and create with wood. The children adored Pieter and
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:47:56] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:47:56] "GET /static/translation_result.pdf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2024 12:48:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/pieterbecking/Python Projects/app.py', reloading

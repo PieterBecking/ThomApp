@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Your CV</title>
+    <script>
+        function toggleInput(method) {
+            if (method === 'form') {
+                document.getElementById('stepByStepForm').style.display = 'block';
+                document.getElementById('bioForm').style.display = 'none';
+            } else if (method === 'bio') {
+                document.getElementById('stepByStepForm').style.display = 'none';
+                document.getElementById('bioForm').style.display = 'block';
+            }
+        }
+
+        function validateForm() {
+            // Get form elements
+            var bio = document.forms["cvForm"]["bio"].value;
+            var formFields = document.getElementById('stepByStepForm').style.display !== 'none';
+            
+            if (formFields) {
+                var name = document.forms["cvForm"]["name"].value;
+                var title = document.forms["cvForm"]["title"].value;
+                var email = document.forms["cvForm"]["email"].value;
+                var phone = document.forms["cvForm"]["phone"].value;
+                var education = document.forms["cvForm"]["education"].value;
+                var experience = document.forms["cvForm"]["experience"].value;
+                var skills = document.forms["cvForm"]["skills"].value;
+                var fieldsFilled = name || title || email || phone || education || experience || skills;
+
+                if (!fieldsFilled && !bio) {
+                    alert("Please fill out the form fields or provide information in the bio.");
+                    return false; // Prevent form submission
+                }
+            } else {
+                if (!bio) {
+                    alert("Please provide information in the bio.");
+                    return false; // Prevent form submission
+                }
+            }
+
+            return true; // Allow form submission
+        }
+    </script>
+</head>
+<body>
+    <h1>Fill Your CV Details</h1>
+    <button type="button" onclick="toggleInput('form')">Step by Step</button>
+    <button type="button" onclick="toggleInput('bio')">All in One Go</button>
+
+    <form name="cvForm" method="post" onsubmit="return validateForm()">
+        <div id="stepByStepForm" style="display:none;">
+            <input type="text" name="name" placeholder="Full Name"><br>
+            <input type="text" name="title" placeholder="Title (e.g., Software Developer)"><br>
+            <input type="text" name="email" placeholder="Email Address"><br>
+            <input type="text" name="phone" placeholder="Phone Number"><br>
+            <input type="text" name="education" placeholder="Education (Separate entries with ';')"><br>
+            <input type="text" name="experience" placeholder="Experience (Separate entries with ';')"><br>
+            <input type="text" name="skills" placeholder="Skills (Separate entries with ';')"><br>
+        </div>
+        <div id="bioForm" style="display:none;">
+            <textarea name="bio" rows="10" cols="50" placeholder="Tell us about yourself..."></textarea><br>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
